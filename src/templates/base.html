@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Django Learnging</title>
+        <style>
+            .menu{
+                background-color: rosybrown;
+            }
+            .menu ul li{
+                display: inline-block;
+            }
+            .menu ul li:hover{
+                background-color: orange;
+            }
+            .menu-first{
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <a href="../product/create">New Product Create</a>
+    <ul style="list-style: none;">
+        {%for instance in object_list %}
+           <li style="font-size: 30px;">
+            {{ instance.id }} - {{ instance.title }}
+            <a href="{{ instance.get_absolute_url }}">View</a>
+        </li> 
+        {% endfor %}
+    </ul>
+{% endblock %}

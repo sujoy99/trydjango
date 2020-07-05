@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>In App Template : {{ object.title }}</h1>
+<p>{% if description %} {{ object.description }} {% else %} Description is coming soon.{% endif%}</p>
+<p>{{ object.price }}</p>
+<p>
+    <a href="{{ object.get_absolute_url_delete }}">Delete</a>
+</p>
+{% endblock %}
