@@ -16,7 +16,6 @@ class CourseObjectMixin(object):
 
 class CourseCreateView(View):
     template_name = "courses/course_create.html"
-    
     # get method
     def get(self, request, *args, **kwargs):
         form = CourseModelForm()
